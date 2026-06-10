@@ -6,4 +6,4 @@ Preliminary release of the serverless vega-lite interpreter, quick preview https
 
 Preliminary release of the serverless SQL database with interactive graphic visualisation of datacubes. Based on DuckDB and D3.js https://github.com/paulispaulis/symbiosis/releases/tag/datacube
 
-Cite "Man–LLM Shared Graph Workspace: Spec-First NL-to-VIS via Serialisation" by Paulis Barzdins and Normunds Gruzitis (presented at Baltic DB&IS https://dbis2026.cs.ut.ee/Main/Day3)
+Cite "Man–LLM Shared Graph Workspace: Spec-First NL-to-VIS via Serialisation" by Paulis Barzdins and Normunds Gruzitis (presented at Baltic DB&IS-2026 https://dbis2026.cs.ut.ee/Main/Day3)
