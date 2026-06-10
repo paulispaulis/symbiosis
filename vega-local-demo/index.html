@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Vega Lite Local</title>
+        <style>
+            body {
+                margin: 0;
+                overflow: hidden;
+                background-color: #f0f0f0;
+                font-family: sans-serif;
+            }
+            #vis {
+                width: 100vw;
+                height: 100vh;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="vis"></div>
+
+        <script src="vendor/proj4/proj4.js"></script>
+        <script src="vendor/d3/d3.min.js"></script>
+        <script src="vendor/vega/vega-core.min.js"></script>
+        <script src="vendor/vega/vega.min.js"></script>
+        <script src="vendor/vega-lite/vega-lite.min.js"></script>
+        <script src="vendor/vega-embed/vega-embed.min.js"></script>
+
+        <script>
+            async function init() {
+                try {
+                    const spec = {
+
+// --- START OF SPEC ---
+
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Snapshot 2024: Workers by birth year (count) and salaries (EUR).",
+  "title": "Workers and Salaries by Birth Year — Snapshot 2024",
+  "width": 800,
+  "height": 420,
+  "data": {
+    "values": [{"birth_year": 1928, "workers_count": 3, "avg_salary_eur": 969.98, "median_salary_eur": 0.00}, {"birth_year": 1929, "workers_count": 1, "avg_salary_eur": 0.00, "median_salary_eur": 0.00}, {"birth_year": 1930, "workers_count": 3, "avg_salary_eur": 3106.54, "median_salary_eur": 4107.63}, {"birth_year": 1931, "workers_count": 13, "avg_salary_eur": 1373.94, "median_salary_eur": 241.50}, {"birth_year": 1932, "workers_count": 7, "avg_salary_eur": 10208.81, "median_salary_eur": 7500.88}, {"birth_year": 1933, "workers_count": 21, "avg_salary_eur": 4808.96, "median_salary_eur": 1615.68}, {"birth_year": 1934, "workers_count": 26, "avg_salary_eur": 6161.99, "median_salary_eur": 3793.43}, {"birth_year": 1935, "workers_count": 64, "avg_salary_eur": 2817.06, "median_salary_eur": 1615.68}, {"birth_year": 1936, "workers_count": 75, "avg_salary_eur": 4939.75, "median_salary_eur": 1531.00}, {"birth_year": 1937, "workers_count": 123, "avg_salary_eur": 3702.25, "median_salary_eur": 1615.68}, {"birth_year": 1938, "workers_count": 195, "avg_salary_eur": 4802.16, "median_salary_eur": 2250.00}, {"birth_year": 1939, "workers_count": 250, "avg_salary_eur": 5388.00, "median_salary_eur": 2394.40}, {"birth_year": 1940, "workers_count": 329, "avg_salary_eur": 40100.60, "median_salary_eur": 2635.10}, {"birth_year": 1941, "workers_count": 402, "avg_salary_eur": 4747.29, "median_salary_eur": 2482.81}, {"birth_year": 1942, "workers_count": 501, "avg_salary_eur": 5790.69, "median_salary_eur": 3451.03}, {"birth_year": 1943, "workers_count": 568, "avg_salary_eur": 6224.12, "median_salary_eur": 3457.48}, {"birth_year": 1944, "workers_count": 634, "avg_salary_eur": 6098.92, "median_salary_eur": 3456.37}, {"birth_year": 1945, "workers_count": 804, "avg_salary_eur": 7208.90, "median_salary_eur": 4398.32}, {"birth_year": 1946, "workers_count": 1014, "avg_salary_eur": 7267.26, "median_salary_eur": 4407.67}, {"birth_year": 1947, "workers_count": 1384, "avg_salary_eur": 7474.23, "median_salary_eur": 4535.13}, {"birth_year": 1948, "workers_count": 1687, "avg_salary_eur": 7978.47, "median_salary_eur": 5338.25}, {"birth_year": 1949, "workers_count": 2201, "avg_salary_eur": 7352.21, "median_salary_eur": 5030.67}, {"birth_year": 1950, "workers_count": 2597, "avg_salary_eur": 8402.79, "median_salary_eur": 6507.00}, {"birth_year": 1951, "workers_count": 3154, "avg_salary_eur": 8445.48, "median_salary_eur": 6538.54}, {"birth_year": 1952, "workers_count": 3785, "avg_salary_eur": 9189.06, "median_salary_eur": 7254.78}, {"birth_year": 1953, "workers_count": 4529, "avg_salary_eur": 9583.90, "median_salary_eur": 7346.45}, {"birth_year": 1954, "workers_count": 5702, "avg_salary_eur": 10085.28, "median_salary_eur": 8003.04}, {"birth_year": 1955, "workers_count": 6843, "avg_salary_eur": 10584.72, "median_salary_eur": 8400.00}, {"birth_year": 1956, "workers_count": 7918, "avg_salary_eur": 10879.36, "median_salary_eur": 8640.26}, {"birth_year": 1957, "workers_count": 9405, "avg_salary_eur": 11357.37, "median_salary_eur": 8980.30}, {"birth_year": 1958, "workers_count": 11334, "avg_salary_eur": 12140.94, "median_salary_eur": 9579.36}, {"birth_year": 1959, "workers_count": 13830, "avg_salary_eur": 13169.20, "median_salary_eur": 10190.70}, {"birth_year": 1960, "workers_count": 16306, "avg_salary_eur": 14049.63, "median_salary_eur": 11462.29}, {"birth_year": 1961, "workers_count": 17775, "avg_salary_eur": 14269.29, "median_salary_eur": 11754.70}, {"birth_year": 1962, "workers_count": 18310, "avg_salary_eur": 14442.24, "median_salary_eur": 11747.79}, {"birth_year": 1963, "workers_count": 18191, "avg_salary_eur": 14736.25, "median_salary_eur": 12027.32}, {"birth_year": 1964, "workers_count": 18108, "avg_salary_eur": 15242.78, "median_salary_eur": 12335.43}, {"birth_year": 1965, "workers_count": 17589, "avg_salary_eur": 15431.27, "median_salary_eur": 12349.53}, {"birth_year": 1966, "workers_count": 18349, "avg_salary_eur": 15545.84, "median_salary_eur": 12427.77}, {"birth_year": 1967, "workers_count": 18423, "avg_salary_eur": 15887.60, "median_salary_eur": 13060.65}, {"birth_year": 1968, "workers_count": 18822, "avg_salary_eur": 16033.66, "median_salary_eur": 13002.05}, {"birth_year": 1969, "workers_count": 18932, "avg_salary_eur": 16477.96, "median_salary_eur": 13289.96}, {"birth_year": 1970, "workers_count": 19641, "avg_salary_eur": 16873.27, "median_salary_eur": 13577.15}, {"birth_year": 1971, "workers_count": 20307, "avg_salary_eur": 17340.87, "median_salary_eur": 13851.16}, {"birth_year": 1972, "workers_count": 20046, "avg_salary_eur": 17710.36, "median_salary_eur": 14094.88}, {"birth_year": 1973, "workers_count": 19830, "avg_salary_eur": 18324.09, "median_salary_eur": 14517.20}, {"birth_year": 1974, "workers_count": 19939, "avg_salary_eur": 18648.16, "median_salary_eur": 14698.68}, {"birth_year": 1975, "workers_count": 19905, "avg_salary_eur": 19126.21, "median_salary_eur": 14964.15}, {"birth_year": 1976, "workers_count": 19777, "avg_salary_eur": 19307.46, "median_salary_eur": 15339.82}, {"birth_year": 1977, "workers_count": 19382, "avg_salary_eur": 20048.54, "median_salary_eur": 15432.73}, {"birth_year": 1978, "workers_count": 19196, "avg_salary_eur": 20048.70, "median_salary_eur": 15795.15}, {"birth_year": 1979, "workers_count": 19306, "avg_salary_eur": 20297.71, "median_salary_eur": 16127.86}, {"birth_year": 1980, "workers_count": 19807, "avg_salary_eur": 22246.83, "median_salary_eur": 16236.27}, {"birth_year": 1981, "workers_count": 20305, "avg_salary_eur": 20454.85, "median_salary_eur": 16361.15}, {"birth_year": 1982, "workers_count": 21034, "avg_salary_eur": 20459.57, "median_salary_eur": 16369.06}, {"birth_year": 1983, "workers_count": 22773, "avg_salary_eur": 20414.55, "median_salary_eur": 16516.83}, {"birth_year": 1984, "workers_count": 22568, "avg_salary_eur": 20373.23, "median_salary_eur": 16619.72}, {"birth_year": 1985, "workers_count": 22624, "avg_salary_eur": 20118.61, "median_salary_eur": 16420.18}, {"birth_year": 1986, "workers_count": 23386, "avg_salary_eur": 19750.17, "median_salary_eur": 16232.64}, {"birth_year": 1987, "workers_count": 23554, "avg_salary_eur": 19677.21, "median_salary_eur": 16149.82}, {"birth_year": 1988, "workers_count": 22919, "avg_salary_eur": 19409.30, "median_salary_eur": 16015.23}, {"birth_year": 1989, "workers_count": 22123, "avg_salary_eur": 19413.97, "median_salary_eur": 16021.77}, {"birth_year": 1990, "workers_count": 21685, "avg_salary_eur": 19172.41, "median_salary_eur": 15911.89}, {"birth_year": 1991, "workers_count": 20292, "avg_salary_eur": 18741.88, "median_salary_eur": 15949.33}, {"birth_year": 1992, "workers_count": 19278, "avg_salary_eur": 18478.00, "median_salary_eur": 15630.09}, {"birth_year": 1993, "workers_count": 16554, "avg_salary_eur": 17921.92, "median_salary_eur": 15321.19}, {"birth_year": 1994, "workers_count": 15458, "avg_salary_eur": 17685.50, "median_salary_eur": 15257.90}, {"birth_year": 1995, "workers_count": 14134, "avg_salary_eur": 17161.62, "median_salary_eur": 15078.37}, {"birth_year": 1996, "workers_count": 12971, "avg_salary_eur": 16736.58, "median_salary_eur": 14962.17}, {"birth_year": 1997, "workers_count": 12653, "avg_salary_eur": 16229.80, "median_salary_eur": 14703.45}, {"birth_year": 1998, "workers_count": 12257, "avg_salary_eur": 15382.98, "median_salary_eur": 13994.19}, {"birth_year": 1999, "workers_count": 13023, "avg_salary_eur": 14409.47, "median_salary_eur": 13336.86}, {"birth_year": 2000, "workers_count": 13606, "avg_salary_eur": 13204.89, "median_salary_eur": 12172.10}, {"birth_year": 2001, "workers_count": 13021, "avg_salary_eur": 11512.96, "median_salary_eur": 10555.74}, {"birth_year": 2002, "workers_count": 12739, "avg_salary_eur": 9890.47, "median_salary_eur": 8833.81}, {"birth_year": 2003, "workers_count": 12627, "avg_salary_eur": 8297.90, "median_salary_eur": 7229.66}, {"birth_year": 2004, "workers_count": 11541, "avg_salary_eur": 6241.24, "median_salary_eur": 4823.83}, {"birth_year": 2005, "workers_count": 10729, "avg_salary_eur": 4014.78, "median_salary_eur": 2651.34}, {"birth_year": 2006, "workers_count": 8877, "avg_salary_eur": 2220.50, "median_salary_eur": 1409.11}, {"birth_year": 2007, "workers_count": 6853, "avg_salary_eur": 1250.65, "median_salary_eur": 764.47}, {"birth_year": 2008, "workers_count": 4880, "avg_salary_eur": 891.12, "median_salary_eur": 751.23}, {"birth_year": 2009, "workers_count": 2741, "avg_salary_eur": 577.17, "median_salary_eur": 591.69}, {"birth_year": 2010, "workers_count": 847, "avg_salary_eur": 10.17, "median_salary_eur": 0.00}, {"birth_year": 2011, "workers_count": 370, "avg_salary_eur": 8.91, "median_salary_eur": 0.00}, {"birth_year": 2012, "workers_count": 11, "avg_salary_eur": 402.24, "median_salary_eur": 0.00}, {"birth_year": 2013, "workers_count": 7, "avg_salary_eur": 35.71, "median_salary_eur": 0.00}, {"birth_year": 2014, "workers_count": 4, "avg_salary_eur": 1.25, "median_salary_eur": 0.00}, {"birth_year": 2015, "workers_count": 1, "avg_salary_eur": 0.00, "median_salary_eur": 0.00}, {"birth_year": 2016, "workers_count": 7, "avg_salary_eur": 0.00, "median_salary_eur": 0.00}, {"birth_year": 2017, "workers_count": 4, "avg_salary_eur": 0.00, "median_salary_eur": 0.00}, {"birth_year": 2019, "workers_count": 2, "avg_salary_eur": 0.00, "median_salary_eur": 0.00}, {"birth_year": 2021, "workers_count": 1, "avg_salary_eur": 0.00, "median_salary_eur": 0.00}, {"birth_year": 2022, "workers_count": 1, "avg_salary_eur": 6603.68, "median_salary_eur": 6603.68}, {"birth_year": 2023, "workers_count": 1, "avg_salary_eur": 0.00, "median_salary_eur": 0.00}]
+  },
+  "layer": [
+    {
+      "transform": [
+        {"fold": ["avg_salary_eur", "median_salary_eur"], "as": ["series", "value"]},
+        {
+          "calculate": "datum.series === 'avg_salary_eur' ? 'Average salary' : 'Median salary'",
+          "as": "series_label"
+        }
+      ],
+      "mark": {"type": "line", "point": true},
+      "encoding": {
+        "x": {
+          "field": "birth_year",
+          "type": "quantitative",
+          "axis": {"title": "Birth year", "tickMinStep": 1}
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "axis": {"title": "EUR", "orient": "right"}
+        },
+        "color": {
+          "field": "series_label",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Average salary", "Median salary", "Workers"],
+            "range": ["#1f77b4", "#ff7f0e", "#2ca02c"]
+          },
+          "legend": {"title": "Series"}
+        },
+        "tooltip": [
+          {"field": "series_label", "type": "nominal", "title": "Series"},
+          {"field": "birth_year", "type": "quantitative", "title": "Birth year"},
+          {"field": "value", "type": "quantitative", "title": "EUR", "format": ",.0f"}
+        ]
+      }
+    },
+    {
+      "transform": [
+        {"fold": ["workers_count"], "as": ["key", "value"]},
+        {
+          "calculate": "datum.key === 'workers_count' ? 'Workers' : datum.key",
+          "as": "series_label"
+        }
+      ],
+      "mark": {"type": "line", "point": true, "strokeDash": [4, 3]},
+      "encoding": {
+        "x": {"field": "birth_year", "type": "quantitative"},
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "axis": {"title": "Workers", "orient": "left"}
+        },
+        "color": {
+          "field": "series_label",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Average salary", "Median salary", "Workers"],
+            "range": ["#1f77b4", "#ff7f0e", "#2ca02c"]
+          },
+          "legend": {"title": "Series"}
+        },
+        "tooltip": [
+          {"field": "series_label", "type": "nominal", "title": "Series"},
+          {"field": "birth_year", "type": "quantitative", "title": "Birth year"},
+          {"field": "value", "type": "quantitative", "title": "Workers", "format": ",.0f"}
+        ]
+      }
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "y": "independent",
+      "color": "shared"
+    }
+  }
+
+// --- END OF SPEC ---
+
+                    };
+
+                    await vegaEmbed("#vis", spec, {
+                        actions: false,
+                        // renderer: "svg",
+                    });
+                } catch (err) {
+                    console.error("❌ Error initializing Vega map:", err);
+                }
+            }
+
+            init();
+        </script>
+    </body>
+</html>
