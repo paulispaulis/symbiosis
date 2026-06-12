@@ -9,7 +9,6 @@ Preliminary release of the serverless SQL database with interactive graphic visu
 Cite "Man–LLM Shared Graph Workspace: Spec-First NL-to-VIS via Serialisation" by Paulis Barzdins and Normunds Gruzitis (presented at Baltic DB&IS-2026 https://dbis2026.cs.ut.ee/Main/Day3)
 
 ## key findings from OECD
-﻿
  1.  Financing high defence spending, improvements in health care and reductions in old-age poverty while containing the fiscal deficit will require raising spending efficiency, reallocating spending and increasing tax revenue, including from income, property and environmental taxes and by strengthening tax enforcement.
  
 2. ﻿Accelerating the green transition will require strengthening carbon pricing and facilitating the expansion of renewable energy supply, while supporting vulnerable households and workers that need to move jobs and adapt to changing skill requirements.
