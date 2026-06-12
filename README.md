@@ -11,9 +11,12 @@ Cite "Man–LLM Shared Graph Workspace: Spec-First NL-to-VIS via Serialisation" 
 # key findings from OECD
 
 ﻿1.  Financing high defence spending, improvements in health care and reductions in old-age poverty while containing the fiscal deficit will require raising spending efficiency, reallocating spending and increasing tax revenue, including from income, property and environmental taxes and by strengthening tax enforcement.
+
 ﻿2. ﻿Accelerating the green transition will require strengthening carbon pricing and facilitating the expansion of renewable energy supply, while supporting vulnerable households and workers that need to move jobs and adapt to changing skill requirements.
+
 3. Improving health outcomes will require investing more in public healthcare, raising spending efficiency by accelerating the digitalisation of healthcare services, and strengthening preventive measures, including through higher excise tax rates on alcohol, tobacco and sweetened beverages.
-5. Reducing the administrative burden and raising spending efficiency will require further simplifying and digitalising administrative procedures and improving data sharing and policy impact evaluation across the public administration.
+
+4. Reducing the administrative burden and raising spending efficiency will require further simplifying and digitalising administrative procedures and improving data sharing and policy impact evaluation across the public administration.
 
 Source: https://oe.cd/LVA
 
