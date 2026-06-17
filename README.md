@@ -17,5 +17,5 @@ Cite "Man–LLM Shared Graph Workspace: Spec-First NL-to-VIS via Serialisation" 
 
 4. Reducing the administrative burden and raising spending efficiency will require further simplifying and digitalising administrative procedures and improving data sharing and policy impact evaluation across the public administration.
 
-Source: https://oe.cd/LVA
+Source: https://oe.cd/LVA (Video: https://www.youtube.com/watch?v=bmbL3YdInYg )
 
