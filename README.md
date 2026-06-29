@@ -8,7 +8,7 @@ Preliminary release of the serverless SQL database with interactive graphic visu
 
 Cite:
 
-Barzdins, P., Gruzitis, N. (2026). Man–LLM Shared Graph Workspace: Spec-First NL-To-VIS via Serialisation. In: Matulevičius, R., Robal, T., Kornyshova, E., Nikiforova, A., Liiv, I. (eds) Digital Business and Intelligent Systems. DB&IS 2026. Communications in Computer and Information Science, vol 3085. Springer, Cham. https://doi.org/10.1007/978-3-032-30863-4_11 
+Barzdins, P., Gruzitis, N. (2026). Man–LLM Shared Graph Workspace: Spec-First NL-To-VIS via Serialisation. In: Matulevičius, R., Robal, T., Kornyshova, E., Nikiforova, A., Liiv, I. (eds) Digital Business and Intelligent Systems. DB&IS 2026. Communications in Computer and Information Science, vol 3085. Springer, Cham. pp 169–184 https://doi.org/10.1007/978-3-032-30863-4_11 
 
 Presented at Baltic DB&IS-2026 https://dbis2026.cs.ut.ee/Main/Day3 ; video https://youtu.be/W4C8LkP5VBE )
 
