@@ -6,7 +6,7 @@ Preliminary release of the serverless vega-lite interpreter, quick preview https
 
 Preliminary release of the serverless SQL database with interactive graphic visualisation of datacubes. Based on DuckDB and D3.js https://github.com/paulispaulis/symbiosis/releases/tag/datacube
 
-Cite "Man–LLM Shared Graph Workspace: Spec-First NL-to-VIS via Serialisation" by Paulis Barzdins and Normunds Gruzitis (presented at Baltic DB&IS-2026 https://dbis2026.cs.ut.ee/Main/Day3)
+Cite "Man–LLM Shared Graph Workspace: Spec-First NL-to-VIS via Serialisation" by Paulis Barzdins and Normunds Gruzitis (presented at Baltic DB&IS-2026 https://dbis2026.cs.ut.ee/Main/Day3 ; video https://youtu.be/W4C8LkP5VBE ; paper https://link.springer.com/chapter/10.1007/978-3-032-30863-4_11 )
 
 ## key findings from OECD
  1.  Financing high defence spending, improvements in health care and reductions in old-age poverty while containing the fiscal deficit will require raising spending efficiency, reallocating spending and increasing tax revenue, including from income, property and environmental taxes and by strengthening tax enforcement.
