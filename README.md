@@ -6,9 +6,11 @@ Preliminary release of the serverless vega-lite interpreter, quick preview https
 
 Preliminary release of the serverless SQL database with interactive graphic visualisation of datacubes. Based on DuckDB and D3.js https://github.com/paulispaulis/symbiosis/releases/tag/datacube
 
-Cite "Man–LLM Shared Graph Workspace: Spec-First NL-to-VIS via Serialisation" by Paulis Barzdins and Normunds Gruzitis (presented at Baltic DB&IS-2026 https://dbis2026.cs.ut.ee/Main/Day3 ; video https://youtu.be/W4C8LkP5VBE ; paper https://link.springer.com/chapter/10.1007/978-3-032-30863-4_11 )
+// Cite "Man–LLM Shared Graph Workspace: Spec-First NL-to-VIS via Serialisation" by Paulis Barzdins and Normunds Gruzitis (presented at Baltic DB&IS-2026 https:dbis2026.cs.ut.ee/Main/Day3 ; video https://youtu.be/W4C8LkP5VBE ; // paper https://link.springer.com/chapter/10.1007/978-3-032-30863-4_11 )
 
-Barzdins, P., Gruzitis, N. (2026). Man–LLM Shared Graph Workspace: Spec-First NL-To-VIS via Serialisation. In: Matulevičius, R., Robal, T., Kornyshova, E., Nikiforova, A., Liiv, I. (eds) Digital Business and Intelligent Systems. DB&IS 2026. Communications in Computer and Information Science, vol 3085. Springer, Cham. https://doi.org/10.1007/978-3-032-30863-4_11
+Barzdins, P., Gruzitis, N. (2026). Man–LLM Shared Graph Workspace: Spec-First NL-To-VIS via Serialisation. In: Matulevičius, R., Robal, T., Kornyshova, E., Nikiforova, A., Liiv, I. (eds) Digital Business and Intelligent Systems. DB&IS 2026. Communications in Computer and Information Science, vol 3085. Springer, Cham. https://doi.org/10.1007/978-3-032-30863-4_11 
+
+Presented at Baltic DB&IS-2026 https://dbis2026.cs.ut.ee/Main/Day3 ; video https://youtu.be/W4C8LkP5VBE )
 
 ## key findings from OECD
  1.  Financing high defence spending, improvements in health care and reductions in old-age poverty while containing the fiscal deficit will require raising spending efficiency, reallocating spending and increasing tax revenue, including from income, property and environmental taxes and by strengthening tax enforcement.
